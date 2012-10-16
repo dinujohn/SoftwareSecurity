@@ -5,8 +5,8 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.asu.wdms.dao.User;
 import com.asu.wdms.dao.UserDao;
+import com.asu.wdms.model.User;
 
 
 public class UserDaoImpl  implements UserDao{

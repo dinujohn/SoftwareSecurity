@@ -1,4 +1,4 @@
-package com.asu.wdms.dao;
+package com.asu.wdms.model;
 
 public class User {
 	private int userId;

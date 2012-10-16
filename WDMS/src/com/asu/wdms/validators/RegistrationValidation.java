@@ -1,9 +1,11 @@
-package net.roseindia.controllers;
+package com.asu.wdms.validators;
 
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
-import net.roseindia.form.Registration;
+
+import com.asu.wdms.form.Registration;
+
 
 @Component("registrationValidator")
 public class RegistrationValidation {
@@ -16,7 +18,7 @@ public class RegistrationValidation {
 		ValidationUtils.rejectIfEmptyOrWhitespace(errors, "userName",
 				"NotEmpty.registration.userName",
 				"User Name must not be Empty.");
-		String userName = registration.getUserName();
+		String userName = registration.getFirstName();
 		if ((userName.length()) > 50) {
 			errors.rejectValue("userName",
 					"lengthOfUser.registration.userName",
@@ -25,8 +27,8 @@ public class RegistrationValidation {
 		if (!(registration.getPassword()).equals(registration
 				.getConfirmPassword())) {
 			errors.rejectValue("password",
-					"matchingPassword.registration.password1",
-					"Password and Confirm Password Not match1111.");
+					"matchingPassword.registration.password",
+					"Password and Confirm Password Not match.");
 		}
 	}
 }

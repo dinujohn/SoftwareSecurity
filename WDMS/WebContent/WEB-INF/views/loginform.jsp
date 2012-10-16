@@ -9,9 +9,7 @@
 </head>
 <body>
 <h3>Login Form</h3>
-<FONT color="blue">
-User Name="UserName" and password="password"
-</FONT>
+
 <form:form action="loginform.html"  commandName="loginForm">
 	<table>
 		<tr>
@@ -33,5 +31,10 @@ User Name="UserName" and password="password"
 		</tr>
 	</table>
 </form:form>
+
+
+
+<a href="registrationform.html"><input type="submit" value="SignUp" /></a></li>
+
 </body>
 </html>

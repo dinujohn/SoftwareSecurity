@@ -51,7 +51,7 @@
 	</bean>
 	
 		
-	<bean id ="userDao" class ="com.asu.ss.UserDaoImpl">
+	<bean id ="userDao" class ="com.asu.wdms.dao.impl.UserDaoImpl">
 	<property name ="jdbcTemplate" ref ="jdbcTemplate"/>
 </bean>
 

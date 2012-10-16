@@ -11,12 +11,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
+import org.springframework.validation.ValidationUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.asu.wdms.common.ApplicationContextProvider;
 import com.asu.wdms.dao.UserDao;
 import com.asu.wdms.form.LoginForm;
+import com.asu.wdms.form.Registration;
 
 
 
@@ -27,7 +29,9 @@ public class LoginController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String showForm(Map model) {
 		LoginForm loginForm = new LoginForm();
+		Registration registration = new Registration();
 		model.put("loginForm", loginForm);
+		model.put("registration",registration);
 		
 		System.out.println("LoginController1");
 		return "loginform";
@@ -48,9 +52,11 @@ public class LoginController {
 			for(ObjectError _err: result.getAllErrors()){
 				System.out.println(_err.getDefaultMessage());
 				System.out.println(_err.getObjectName());
+				
 			}
 			return "loginform";
 		}
+		
 		
 		
 		ApplicationContext ctx = ApplicationContextProvider.getApplicationContext();//WebApplicationContextUtils.genew ClassPathXmlApplicationContext("dispatcher-jdbc.xml");
@@ -67,7 +73,7 @@ public class LoginController {
 			return "loginfail";
 		}
 		model.put("loginForm", loginForm);
-		return "loginsuccess";
+		return "listdocuments";
 	}
 
 }
