@@ -73,5 +73,9 @@ public class Registration {
 	public String getEmailId() {
 		return emailId;
 	}
+	
+	public String toString(){
+		return "[FirstName: "+getFirstName()+", LastName: "+getLastName()+", EmailId: "+getEmailId()+", DepartmentName: "+getDepartmentName()+", Role: "+getRoleName()+"]";
+	}
 
 }

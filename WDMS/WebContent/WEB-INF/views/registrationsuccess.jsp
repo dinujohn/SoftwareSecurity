@@ -12,7 +12,7 @@
 <table>
 	<tr>
 		<td>User Name :</td>
-		<td><core:out value="${registration.userName}" /></td>
+		<td><core:out value="${registration.firstName}" /></td>
 	</tr>
 	<tr>
 		<td>Password :</td>

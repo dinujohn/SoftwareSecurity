@@ -53,6 +53,16 @@
 		
 	<bean id ="userDao" class ="com.asu.wdms.dao.impl.UserDaoImpl">
 	<property name ="jdbcTemplate" ref ="jdbcTemplate"/>
-</bean>
-
+	</bean>
+	
+	<bean id ="UserRequestDao" class ="com.asu.wdms.dao.impl.UserRequestDaoImpl">
+	<property name ="jdbcTemplate" ref ="jdbcTemplate"/>
+	</bean>
+	
+	<bean id ="SystemLogDao" class ="com.asu.wdms.dao.impl.SystemLogDaoImpl">
+	<property name ="jdbcTemplate" ref ="jdbcTemplate"/>
+	</bean>
+	
+	
+	
 </beans>

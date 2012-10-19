@@ -29,5 +29,16 @@
 <ul>
 	<li><a href="forms/test.html">Test</a></li>
 </ul>
+
+<ul>
+	<li><a href="forms/admin.html">Admin Page</a></li>
+</ul>
+
+<ul>
+	<li><a href="forms/welcome">Welcome</a></li>
+</ul>
+<ul>
+	<li><a href="forms/login">Login</a></li>
+</ul>
 </body>
 </html>

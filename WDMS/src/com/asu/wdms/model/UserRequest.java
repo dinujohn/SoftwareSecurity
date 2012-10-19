@@ -2,7 +2,7 @@ package com.asu.wdms.model;
 
 public class UserRequest {
 	int reqID;
-	String reqType;
+	int reqType;
 	String reqContent;
 	int status;
 	String comment;
@@ -13,10 +13,10 @@ public class UserRequest {
 	public void setReqID(int reqID) {
 		this.reqID = reqID;
 	}
-	public String getReqType() {
+	public int getReqType() {
 		return reqType;
 	}
-	public void setReqType(String reqType) {
+	public void setReqType(int reqType) {
 		this.reqType = reqType;
 	}
 	public String getReqContent() {

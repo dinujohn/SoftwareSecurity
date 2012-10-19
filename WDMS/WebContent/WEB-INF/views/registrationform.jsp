@@ -9,7 +9,7 @@
 </head>
 <body>
 <form:form method="Post" action="registrationform.html"
-	commandName="Registration">
+	commandName="registration">
 	<table>
 		<tr>
 			<td>First Name:<FONT color="red"><form:errors
