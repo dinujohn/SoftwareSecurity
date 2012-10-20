@@ -27,7 +27,7 @@
 	<li><a href="forms/uploadfileindex.html">File Upload</a></li>
 </ul>
 <ul>
-	<li><a href="forms/test.html">Test</a></li>
+	<li><a href="forms/test">Test</a></li>
 </ul>
 
 <ul>

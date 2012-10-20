@@ -11,21 +11,21 @@
 			authentication-failure-url="/loginfailed" />
 		<logout logout-success-url="/logout" />
 	</http>-->
-	<http auto-config='true'>
-    <intercept-url pattern="/**" access="ROLE_USER" />
+	<!--  http auto-config='true'>
+    <intercept-url pattern="/*" access="ROLE_USER" />
     <port-mappings>
       <port-mapping http="8080" https="8443"/>
     </port-mappings>
-  </http>
+  </http-->
 
-	<authentication-manager>
+	<!-- authentication-manager>
     <authentication-provider>
       <user-service>
         <user name="jimi" password="jimispassword" authorities="ROLE_USER, ROLE_ADMIN" />
         <user name="bob" password="bobspassword" authorities="ROLE_USER" />
       </user-service>
     </authentication-provider>
-  </authentication-manager>
+  </authentication-manager-->
 	
 	
 
