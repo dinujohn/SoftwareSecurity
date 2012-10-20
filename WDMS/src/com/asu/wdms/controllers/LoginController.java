@@ -45,7 +45,7 @@ public class LoginController {
 		sysLogDao.addLog(log);
 		
 		System.out.println("LoginController1");
-		return "loginform";
+		return "loginform"; 
 	}
 	
 
