@@ -14,22 +14,24 @@
 		<url-pattern>/forms/*</url-pattern>
 	</servlet-mapping>
 	
-	<!-- listener>
+	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener-->
+	</listener>
 	
-	<!-- context-param>
+	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>/WEB-INF/dispatcher-servlet.xml,/WEB-INF/spring-security.xml
 		</param-value>
-	</context-param-->
+	</context-param>
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	
 	
+	
 	<!-- Spring Security -->
-	<!-- filter>
+	
+	<filter>
 		<filter-name>springSecurityFilterChain</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
@@ -37,9 +39,9 @@
 	<filter-mapping>
 		<filter-name>springSecurityFilterChain</filter-name>
 		<url-pattern>/*</url-pattern>
-	</filter-mapping-->
+	</filter-mapping>
 
-	<!-- <security-constraint>
+	<security-constraint>
 	<web-resource-collection>
 		<web-resource-name>dispatcher</web-resource-name>
 		<url-pattern>/forms/*</url-pattern>
@@ -47,8 +49,7 @@
 	
 	
 	<user-data-constraint>
-		<transport-guarantee>NONE</transport-guarantee>
+		<transport-guarantee>CONFIDENTIAL</transport-guarantee>
 	</user-data-constraint>
 	</security-constraint>
-	-->
 </web-app>

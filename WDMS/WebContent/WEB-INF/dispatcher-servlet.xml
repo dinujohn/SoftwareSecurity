@@ -63,6 +63,10 @@
 	<property name ="jdbcTemplate" ref ="jdbcTemplate"/>
 	</bean>
 	
+	<bean id ="ShowDocDao" class ="com.asu.wdms.dao.impl.ShowDocDaoImpl">
+	<property name ="jdbcTemplate" ref ="jdbcTemplate"/>
+	</bean>
+	
 	
 	
 </beans>

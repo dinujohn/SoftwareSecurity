@@ -40,5 +40,8 @@
 <ul>
 	<li><a href="forms/login">Login</a></li>
 </ul>
+<ul>
+	<li><a href="forms/listdocuments.html">List Documents</a></li>
+</ul>
 </body>
 </html>
